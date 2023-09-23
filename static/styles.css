@@ -81,6 +81,67 @@ a {
 
 /* END NAV */
 
+@media (max-width: 768px) {
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* To evenly space the items */
+    z-index: 1000;
+    transition: margin-left 0.5s;
+    margin-left: -200px; /* Start off the screen */
+  }
+  
+  /* Styling for each navbar item */
+  .nav-item {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* This is width of navbar */
+    height: 15vh; /* Adjust the height as needed */
+    cursor:pointer;
+    transition: background-color 0.5s;
+    border-radius: 20px; /* Add rounded corners to the navbar items */
+    overflow: hidden; /* Ensure the rounded corners are applied */
+    margin: 5px;
+  }
+  
+  /* To Size & Color the icons */
+  .nav-item i{
+    color: #FC7F61;
+    font-size: 35px;
+  }
+  
+  /* Styling for the item's text */
+  .nav-text {
+    display: none;
+    color:antiquewhite; /* Text color */
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif, bold;
+  }
+  
+  /* Hover effect for navbar items */
+  .nav-item:hover {
+    background-color: #FC7F61; /* Change this to your preferred hover color */
+  }
+  
+  /* Show the text when hovering over the item */
+  .nav-item:hover .nav-text {
+    display:inline;
+  }
+  
+  .nav-item:hover i{
+    color:#481C5C; /* Change this to your preferred hover color of the icon */
+  } 
+}
+
 /* LINKS NAV*/
 .links-navbar-container {
   position:absolute;
@@ -138,6 +199,68 @@ a {
 .links-nav-item:hover i{
   color:#FC7F61; /* Change this to your preferred hover color of the icon */
 }
+
+@media (max-width: 768px) {
+  .links-navbar-container {
+    position:absolute;
+    top: 40vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; /* To evenly space the items */
+    z-index: 999;
+  }
+  
+  /* Styling for each navbar item */
+  .links-nav-item {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* This is width of navbar */
+    height: 15vh; /* Adjust the height as needed */
+    cursor:pointer;
+    transition: background-color 0.5s;
+    border-radius: 20px; /* Add rounded corners to the navbar items */
+    overflow: hidden; /* Ensure the rounded corners are applied */
+    margin: 5px;
+  }
+  
+  /* To Size & Color the icons */
+  .links-nav-item i{
+    color: #481C5C;
+    font-size: 35px;
+  }
+  
+  /* Styling for the item's text */
+  .links-nav-text {
+    display: none;
+    color:antiquewhite; /* Text color */
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif, bold;
+  }
+  
+  /* Hover effect for navbar items */
+  .links-nav-item:hover {
+    background-color:#481C5C; /* Change this to your preferred hover color */
+  }
+  
+  /* Show the text when hovering over the item */
+  .links-nav-item:hover .nav-text {
+    display:block;
+    font-size: 1rem;
+  }
+  
+  .links-nav-item:hover i{
+    color:#FC7F61; /* Change this to your preferred hover color of the icon */
+  }
+
+
+}
+
 /* END LINKS NAV */
 
 #bg-container {
@@ -243,6 +366,74 @@ a {
 }
 
 
+@media (max-width: 768px) {
+  .about {
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-heading {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-heading-text {
+    font-family: 'Oleo Script', cursive;
+    font-size: 3vw;
+    color: antiquewhite;
+    background-color:#FC7F61;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-radius: 80px;
+  }
+  
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-img {
+    height: 25vh;
+    width: 100vw;
+    justify-content: center;
+  }
+  
+  .about-img  img{
+    background-color: #FC7F61;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  
+  .about-text {
+    height: 60vh;
+    width: 100vw;
+    text-align: left;
+  }
+  
+  .about-text-text {
+    background-color: #FC7F61;
+    font-family: 'Raleway', sans-serif;
+    color:antiquewhite;
+    font-size:1rem;
+    margin: 2vw;
+    border-radius: 35px;
+    padding: 45px;
+  
+  }
+}
+
 /* Projects */
 .projects {
   height: 100vh;
@@ -337,6 +528,24 @@ a {
   margin-bottom: 15vh;
 }
 
+
+@media (max-width: 768px) {
+  .projects-row-1 {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .projects-row-2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .projects {
+    font-size: 1rem;
+  }
+
+
+}
 /* Contact me section */
 
 .contact {
@@ -445,10 +654,7 @@ footer {
   align-items: center;
 }
 
-/* .footer-sns-links {
-  font-size: 2rem;
-  color: #FC7F61;
-} */
+
 
 .footer-sns-links i{
   color: #FC7F61;
@@ -458,4 +664,16 @@ footer {
 
 .footer-sns-links :hover i{
   color:antiquewhite ;
+}
+
+@media (max-width: 768px) {
+  .footer-divider{
+    margin: 2vh;
+  }
+
+  .footer-content{
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
 }
