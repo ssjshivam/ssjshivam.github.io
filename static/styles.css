@@ -273,12 +273,15 @@ a {
 
 /* The topmost container */
 .top-container{
+  display: flex;
   width:100vw;
   height: 100vh;
   position: relative;
-  left: 25vw;
-
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 /* It is for the heading */
 .hi{
   top: 30vh;
@@ -405,12 +408,13 @@ a {
     height: 25vh;
     width: 100vw;
     justify-content: center;
+    align-items: center;
   }
   
   .about-img  img{
     background-color: #FC7F61;
-    height: 20vw;
-    width: 20vw;
+    height: 30vw;
+    width: 30vw;
     border-radius: 100%;
     margin-left: 0;
     margin-top: 0;
@@ -544,8 +548,10 @@ a {
     font-size: 1rem;
   }
 
+  .projects-heading {
+    margin-top: 50px;
+  }
 
-}
 /* Contact me section */
 
 .contact {
@@ -676,4 +682,8 @@ footer {
     margin-top: 50px;
   }
 
+  .contact  {
+    font-size: 1rem;
+  }
+}
 }
