@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@400;700&display=swap');
+
+
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#481C5C;
+}
+
+.home-p {
+  position: absolute;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVIGATION BAR */
+/* Basic styling for the navbar container */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10vw;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* To evenly space the items */
+  z-index: 1000;
+  transition: margin-left 0.5s;
+  margin-left: -200px; /* Start off the screen */
+}
+
+/* Styling for each navbar item */
+.nav-item {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%; /* This is width of navbar */
+  height: 15vh; /* Adjust the height as needed */
+  cursor:pointer;
+  transition: background-color 0.5s;
+  border-radius: 20px; /* Add rounded corners to the navbar items */
+  overflow: hidden; /* Ensure the rounded corners are applied */
+  margin: 5px;
+}
+
+/* To Size & Color the icons */
+.nav-item i{
+  color: #FC7F61;
+  font-size: 35px;
+}
+
+/* Styling for the item's text */
+.nav-text {
+  display: none;
+  color:antiquewhite; /* Text color */
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif, bold;
+}
+
+/* Hover effect for navbar items */
+.nav-item:hover {
+  background-color: #FC7F61; /* Change this to your preferred hover color */
+}
+
+/* Show the text when hovering over the item */
+.nav-item:hover .nav-text {
+  display:inline;
+}
+
+.nav-item:hover i{
+  color:#481C5C; /* Change this to your preferred hover color of the icon */
+}
+
+/* END NAV */
+
+/* LINKS NAV*/
+.links-navbar-container {
+  position:absolute;
+  top: 0;
+  right:0;
+  width: 10vw;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* To evenly space the items */
+  z-index: 999;
+}
+
+/* Styling for each navbar item */
+.links-nav-item {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%; /* This is width of navbar */
+  height: 15vh; /* Adjust the height as needed */
+  cursor:pointer;
+  transition: background-color 0.5s;
+  border-radius: 20px; /* Add rounded corners to the navbar items */
+  overflow: hidden; /* Ensure the rounded corners are applied */
+  margin: 5px;
+}
+
+/* To Size & Color the icons */
+.links-nav-item i{
+  color: #481C5C;
+  font-size: 35px;
+}
+
+/* Styling for the item's text */
+.links-nav-text {
+  display: none;
+  color:antiquewhite; /* Text color */
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif, bold;
+}
+
+/* Hover effect for navbar items */
+.links-nav-item:hover {
+  background-color:#481C5C; /* Change this to your preferred hover color */
+}
+
+/* Show the text when hovering over the item */
+.links-nav-item:hover .nav-text {
+  display:inline;
+}
+
+.links-nav-item:hover i{
+  color:#FC7F61; /* Change this to your preferred hover color of the icon */
+}
+/* END LINKS NAV */
+
+#bg-container {
+  background: url(assets/Homepage_BG.png) center center / cover no-repeat;
+  position: relative;
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* The topmost container */
+.top-container{
+  width:100vw;
+  height: 100vh;
+  position: relative;
+  left: 25vw;
+
+}
+/* It is for the heading */
+.hi{
+  top: 30vh;
+  position: absolute;
+  margin: auto;
+  font-size: clamp(40px, 7vw, 100px);;
+  font-family: 'Oleo Script', cursive;
+  color: antiquewhite;
+} 
+
+/* Sub heading */
+.i_am {
+  position: absolute;
+  top: 55vh;
+  margin: auto;
+  font-size: clamp(35px, 4vw, 100px);;
+  font-family: 'Oleo Script', cursive;
+  color: antiquewhite;
+}
+
+/* About section */
+.about {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-heading {
+  display: flex;
+  height: 25vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-heading-text {
+  font-family: 'Oleo Script', cursive;
+  font-size: 3vw;
+  color: antiquewhite;
+  background-color:#FC7F61;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 80px;
+}
+
+
+.about-content {
+  display: flex;
+}
+
+.about-img {
+  height: 75vh;
+  width: 40vw;
+  justify-content: center;
+}
+
+.about-img  img{
+  background-color: #FC7F61;
+  height: 25vw;
+  width: 25vw;
+  border-radius: 100%;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+
+.about-text {
+  height: 75vh;
+  width: 60vw;
+  text-align: left;
+}
+
+.about-text-text {
+  background-color: #FC7F61;
+  font-family: 'Raleway', sans-serif;
+  color:antiquewhite;
+  font-size:1.35rem;
+  margin-right: 5vw;
+  border-radius: 35px;
+  padding: 45px;
+
+}
+
+
+/* Projects */
+.projects {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size:1.2rem;
+  color: antiquewhite;
+}
+
+.projects-heading {
+  display: flex;
+  height: 25vh;
+  width: 100vw;
+  align-items:center;
+  justify-content: center;
+}
+
+.projects-heading-text {
+  font-family: 'Oleo Script', cursive;
+  font-size: 3vw;
+  color: antiquewhite;
+  background-color:#FC7F61;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 80px;
+}
+
+.projects-heading-desc {
+  width: 100vw;
+  color: antiquewhite;
+  padding-bottom: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+}
+
+.projects-row-1 {
+  width: 100vw;
+  height: 30vh;
+  margin-left: 4vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-row-1 p{
+  padding: 10px;
+}
+
+.projects-row-2 p{
+  padding: 10px;
+}
+
+.projects-br {
+  height: 10vh;
+}
+
+.projects-row-2 {
+  width: 100vw;
+  height: 30vh;
+  margin-left: 4vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects img {
+  width: 20vw;
+  border-radius: 25px;
+  
+}
+
+.projects-app {
+  background-color: #FC7F61;
+  margin: 4vw;
+  
+  border-radius: 25px;
+}
+
+.modal-body img{
+  width: 465px;
+}
+
+.project-contact-br{
+  height: 10vh;
+  margin-bottom: 15vh;
+}
+
+/* Contact me section */
+
+.contact {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size:1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-heading {
+  display: flex;
+  height: 25vh;
+  width: 100vw;
+  align-items:center;
+  justify-content: center;
+}
+
+.contact-heading-text {
+  font-family: 'Oleo Script', cursive;
+  font-size: 3vw;
+  color: antiquewhite;
+  background-color:#FC7F61;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 80px;
+}
+
+.contact-heading-desc {
+  width: 90vw;
+  color: antiquewhite;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+  margin-top: 5vh;
+  margin-left: 2vw;
+}
+
+.contact-card {
+  width: 100vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  background-color: #FC7F61;
+  margin: 4vw;
+  border-radius: 25px;
+  height: 60vh;
+  width: 60vw;
+  padding: 50px;
+}
+
+.the-button {
+  background-color:#481C5C;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #00db80;
+  border-color: #0899b3; /*set the color you want here*/
+}
+
+/* Footer */
+footer {
+  height: 60vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size:1.1rem;
+  color: antiquewhite;
+}
+
+.footer-content {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer-divider{
+  background-color: #73fc61;
+  margin: 15vw;
+  border-radius: 25px;
+}
+
+.footer-links {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .footer-sns-links {
+  font-size: 2rem;
+  color: #FC7F61;
+} */
+
+.footer-sns-links i{
+  color: #FC7F61;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.footer-sns-links :hover i{
+  color:antiquewhite ;
+}

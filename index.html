@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Surya - Portfolio</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="static/styles.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar-container" id="element">
+        <div class="nav-item">
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="#home">
+                <span class="nav-text">Home</span>
+            </a>
+
+        </div>
+        <div class="nav-item">
+            <a href="#about">
+                <i class="fa-solid fa-user-tie"></i>
+            </a>
+            <a href="#about">
+                <span class="nav-text">About</span>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="#projects">
+                <i class="fa-solid fa-bars-progress"></i>
+            </a>
+            <a href="#projects">
+                <span class="nav-text">Projects</span>
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="#contact">
+                <i class="fa-solid fa-message"></i>
+            </a>
+            <a href="#contact">
+                <span class="nav-text">Contact</span>
+            </a>
+        </div><!-- Add more navbar items as needed -->
+
+    </div>
+
+    <!-- Links Navbar -->
+    <div class="links-navbar-container" id="fadeInLinks" style="opacity: 0;">
+        <div class="links-nav-item">
+            <a href="https://www.facebook.com/Ssjshivam/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.facebook.com/Ssjshivam/" target="_blank">
+                <span class="nav-text">Facebook</span>
+            </a>
+
+        </div>
+        <div class="links-nav-item">
+            <a href="https://www.youtube.com/vamzanimations" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://www.youtube.com/vamzanimations" target="_blank">
+                <span class="nav-text">YouTube</span>
+            </a>
+        </div>
+        <div class="links-nav-item">
+            <a href="https://www.linkedin.com/in/surya-pratap-singh-3b477b242/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/surya-pratap-singh-3b477b242/" target="_blank">
+                <span class="nav-text">Linkedin</span>
+            </a>
+        </div>
+        <div class="links-nav-item">
+            <a href="https://github.com/ssjshivam" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://github.com/ssjshivam" target="_blank">
+                <span class="nav-text">GitHub</span>
+            </a>
+        </div><!-- Add more navbar items as needed -->
+
+    </div>
+
+    <!--Content-->
+    <p class="home-p" id="home"></p>
+    <section id="bg-container">
+        <div class="top-container">
+            <div class="hi box text" id="fadeInHeading" style="opacity: 0;">Hi There! I'm Surya</div>
+            <p class="i_am" id="fadeInText" style="opacity: 0;">I am a software developer</p>
+        </div>
+    </section><!-- About Me -->
+    <section class="about" id="about">
+        <div class="about-heading">
+            <div class="about-heading-text">About</div>
+        </div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="static/assets/profile-pic.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <div class="about-text-text">Welcome to my website! I'm Surya Pratap Singh, a passionate programming
+                    student
+                    and a creative content creator on YouTube. I embarked on my educational journey by earning a
+                    bachelor's
+                    degree in Commerce in 2021, and since then, I've been on an exciting adventure. In 2022, I dove into
+                    the
+                    world of programming, learning Python as my first programming language and exploring frameworks like
+                    Flask and Bootstrap. While my primary focus is backend development, I'm also honing my frontend
+                    skills
+                    in HTML, CSS, and JavaScript. I'm a dedicated lifelong learner, always eager to explore new
+                    horizons.
+                    Thanks for stopping by and have a nice day!</span></div>
+            </div>
+
+    </section>
+    <!-- Resume -->
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="projects-heading">
+            <div class="projects-heading-text">Projects</div>
+        </div>
+        <div class="projects-heading-desc">Here are some of the projects that's I've made</div>
+        <div class="projects-row-1"><a type="button" data-bs-toggle="modal" data-bs-target="#Modal1">
+                <div class="projects-app">
+                    <img src="static/assets/projects/1.png" alt="">
+                    <p>Japanese Flash Cards App</p>
+                </div>
+            </a><a type="button" data-bs-toggle="modal" data-bs-target="#Modal2">
+                <div class="projects-app">
+                    <img src="static/assets/projects/2.png" alt="">
+                    <p>Vamz Password Manager</p>
+                </div>
+            </a><a type="button" data-bs-toggle="modal" data-bs-target="#Modal3">
+                <div class="projects-app">
+                    <img src="static/assets/projects/3.png" alt="">
+                    <p>Space Invaders Game</p>
+                </div>
+            </a>
+        </div>
+        <div class="projects-br"></div>
+        <div class="projects-row-2"><a type="button" data-bs-toggle="modal" data-bs-target="#Modal4">
+                <div class="projects-app">
+                    <img src="static/assets/projects/4.png" alt="">
+                    <p>Pdf to Text/Mp3 App</p>
+                </div>
+            </a><a type="button" data-bs-toggle="modal" data-bs-target="#Modal5">
+                <div class="projects-app">
+                    <img src="static/assets/projects/5.png" alt="">
+                    <p>Image Watermarking App</p>
+                </div>
+            </a><a type="button" data-bs-toggle="modal" data-bs-target="#Modal6">
+                <div class="projects-app">
+                    <img src="static/assets/projects/6.png" alt="">
+                    <p>Vonnie's Arrival Website</p>
+                </div>
+            </a></div>
+    </section>
+    <!-- Modals -->
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Japanese Flash Cards App</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-modal-images">
+                        <img src="static/assets/projects/1.png" alt="">
+                        <p>This is a Japanese flash card app built using Tkinter GUI library in python, the user will
+                            guess
+                            the meaning of the work in japanese and if he knows the meaning he can top correct button or
+                            if
+                            not he can tap no button, If the user doesn't do anything for 5 seconds the meaning of teh
+                            word
+                            will be revealed.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Vamz Password Manager</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-modal-images">
+                        <img src="static/assets/projects/2.png" alt="">
+                        <p>This is a simple password manager built using Tkinter GUI library along with other libraries
+                            such
+                            as
+                            random, Pillow, etc. The user can generate a secure random password for a website and also
+                            store
+                            it
+                            inside the password manager, he can also search for the password using the search button.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Space Invaders tkinter game</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-modal-images">
+                        <img src="static/assets/projects/3.png" alt="">
+                        <p>This is a remake of the old classic retro game - Space Invaders, thee user will have to
+                            defend &
+                            destroy the invader's fleet. The game is built using the Turtle libray in python and also
+                            have
+                            sound
+                            effects in the game.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">PDF to text or Mp3 app</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-modal-images">
+                        <img src="static/assets/projects/4.png" alt="">
+                        <p>This is app which can extract the text of the pdf and additionally it can also generate the
+                            audiobook of the pdf, its interface has been built using tkinter library, and for its
+                            functionality I have used modules such as PYPDF2 and google speech api., </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Watermarking App</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-modal-images">
+                        <img src="static/assets/projects/5.png" alt="">
+                        <p>This is an simple Watermarking app which is built only using tkinter and pillow module, user
+                            can
+                            load an image into the program and then input the text they desire, then the output image
+                            will
+                            be extracted with watermark.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Vonnie's Arrival Website</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-modal-images">
+                        <img src="static/assets/projects/6.png" alt="">
+                        <p>This is an dummy online shopping website I have built for my GF,I have used using flask
+                            framework
+                            and Bootstrap with Jinja templating, it displays sections
+                            of the fashion items on the shop and user can check the item and proceed to buy them.</p>
+                        <a href="https://vonnies-arrival.onrender.com/" target="_blank">Link</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="project-contact-br"></section>
+    <!-- Contact me -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <div class="contact-heading-text">Contact me</div>
+        </div>
+        <div class="contact-heading-desc">If you're interested about my works, you can always reach me out with the
+            details
+            below
+        </div>
+        <div class="contact-card">
+            <div class="contact-form">
+
+                <form class="form" action="mailto:recipient@example.com" method="post" enctype="text/plain">
+                    <div class="row g-3">
+                        <div class="col-4">
+                            <label for="text">Name</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                placeholder="Your Name">
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="col-8">
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <div class="col py-3">
+                            <input class="btn btn-primary btn-lg the-button" value="Send Message!" type="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <script crossorigin="anonymous" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/script.js"></script>
+</body>
+
+<footer class="footer">
+
+    <div class="footer-content">
+        <div class="credits">
+            <h4 style="font-family: 'Oleo Script', cursive;">Credits</h4>
+            <p>Background Image by Canva @qaiser-images</p>
+            <p>Icons by https://fontawesome.com/</p>
+            <p> </p>
+        </div>
+
+
+        <div class="footer-divider">
+        </div>
+
+        <div class="contact-links">
+            <h4 style="font-family: 'Oleo Script', cursive;">Contact
+                Links</h4>
+            <p><i class="fa-solid fa-envelope px-2"></i>ssjshivam<span
+                    style="font-family: 'Courier New', Courier, monospace;">2777</span>@gmail.com</p>
+            <p style="font-family: 'Courier New', Courier, monospace;"><i class="fa-solid fa-phone px-2"></i>+91
+                7703903587</p>
+        </div>
+    </div>
+
+    <div class="footer-links">
+        <div class="footer-sns-links">
+            <a href="">
+                <i class="fa-brands fa-facebook px-2"></i>
+            </a>
+
+            <a href=""><i class="fa-brands fa-youtube px-2"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-linkedin px-2"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-github px-2"></i>
+            </a>
+        </div>
+        <p>© <span style="font-family:'Courier New', Courier, monospace;">2023</span> Surya Pratap Singh, Inc. All
+            rights reserved.</p>
+    </div>
+</footer>
+
+</html>
