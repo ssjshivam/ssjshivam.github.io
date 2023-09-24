@@ -454,7 +454,7 @@ footer {
   color:antiquewhite ;
 }
 
-/* Styling when user is in mobile mode */
+/* Styling when user is in mobile mode ---------------------------*/
 
 @media (max-width: 768px) {
 
@@ -476,6 +476,9 @@ footer {
     flex-direction: row;
   }
   
+  .about {
+    height: 90vh;
+  }
 
   .about-heading{
     height: 10vh;
@@ -529,7 +532,6 @@ footer {
 
   .projects-heading {
     height: 10vh;
-    margin-top: 50px;
   }
 
   .projects-heading-text {
