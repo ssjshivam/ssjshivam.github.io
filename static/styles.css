@@ -1,3 +1,4 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@400;700&display=swap');
 
 
@@ -19,7 +20,7 @@ a {
 }
 
 /* NAVIGATION BAR */
-/* Basic styling for the navbar container */
+/* Main Bar */
 .navbar-container {
   position: fixed;
   top: 0;
@@ -30,10 +31,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* To evenly space the items */
+  justify-content: center; 
   z-index: 1000;
   transition: margin-left 0.5s;
-  margin-left: -200px; /* Start off the screen */
+  margin-left: -200px; 
 }
 
 /* Styling for each navbar item */
@@ -42,12 +43,12 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%; /* This is width of navbar */
-  height: 15vh; /* Adjust the height as needed */
+  width: 80%; 
+  height: 15vh; 
   cursor:pointer;
   transition: background-color 0.5s;
-  border-radius: 20px; /* Add rounded corners to the navbar items */
-  overflow: hidden; /* Ensure the rounded corners are applied */
+  border-radius: 20px; 
+  overflow: hidden;
   margin: 5px;
 }
 
@@ -60,14 +61,14 @@ a {
 /* Styling for the item's text */
 .nav-text {
   display: none;
-  color:antiquewhite; /* Text color */
+  color:antiquewhite;
   margin-top: 5px;
   font-family: 'Raleway', sans-serif, bold;
 }
 
 /* Hover effect for navbar items */
 .nav-item:hover {
-  background-color: #FC7F61; /* Change this to your preferred hover color */
+  background-color: #FC7F61;
 }
 
 /* Show the text when hovering over the item */
@@ -76,70 +77,7 @@ a {
 }
 
 .nav-item:hover i{
-  color:#481C5C; /* Change this to your preferred hover color of the icon */
-}
-
-/* END NAV */
-
-@media (max-width: 768px) {
-  .navbar-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 10vh;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; /* To evenly space the items */
-    z-index: 1000;
-    transition: margin-left 0.5s;
-    margin-left: -200px; /* Start off the screen */
-  }
-  
-  /* Styling for each navbar item */
-  .nav-item {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 80%; /* This is width of navbar */
-    height: 15vh; /* Adjust the height as needed */
-    cursor:pointer;
-    transition: background-color 0.5s;
-    border-radius: 20px; /* Add rounded corners to the navbar items */
-    overflow: hidden; /* Ensure the rounded corners are applied */
-    margin: 5px;
-  }
-  
-  /* To Size & Color the icons */
-  .nav-item i{
-    color: #FC7F61;
-    font-size: 35px;
-  }
-  
-  /* Styling for the item's text */
-  .nav-text {
-    display: none;
-    color:antiquewhite; /* Text color */
-    margin-top: 5px;
-    font-family: 'Raleway', sans-serif, bold;
-  }
-  
-  /* Hover effect for navbar items */
-  .nav-item:hover {
-    background-color: #FC7F61; /* Change this to your preferred hover color */
-  }
-  
-  /* Show the text when hovering over the item */
-  .nav-item:hover .nav-text {
-    display:inline;
-  }
-  
-  .nav-item:hover i{
-    color:#481C5C; /* Change this to your preferred hover color of the icon */
-  } 
+  color:#481C5C;
 }
 
 /* LINKS NAV*/
@@ -153,115 +91,50 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* To evenly space the items */
+  justify-content: center; 
   z-index: 999;
 }
 
-/* Styling for each navbar item */
+
 .links-nav-item {
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%; /* This is width of navbar */
-  height: 15vh; /* Adjust the height as needed */
+  width: 80%; 
+  height: 15vh; 
   cursor:pointer;
   transition: background-color 0.5s;
-  border-radius: 20px; /* Add rounded corners to the navbar items */
-  overflow: hidden; /* Ensure the rounded corners are applied */
+  border-radius: 20px;
+  overflow: hidden;
   margin: 5px;
 }
 
-/* To Size & Color the icons */
 .links-nav-item i{
   color: #481C5C;
   font-size: 35px;
 }
 
-/* Styling for the item's text */
 .links-nav-text {
   display: none;
-  color:antiquewhite; /* Text color */
+  color:antiquewhite; 
   margin-top: 5px;
   font-family: 'Raleway', sans-serif, bold;
 }
 
-/* Hover effect for navbar items */
 .links-nav-item:hover {
-  background-color:#481C5C; /* Change this to your preferred hover color */
+  background-color:#481C5C; 
 }
 
-/* Show the text when hovering over the item */
 .links-nav-item:hover .nav-text {
   display:inline;
 }
 
 .links-nav-item:hover i{
-  color:#FC7F61; /* Change this to your preferred hover color of the icon */
+  color:#FC7F61;
 }
 
-@media (max-width: 768px) {
-  .links-navbar-container {
-    position:absolute;
-    top: 40vh;
-    width: 100vw;
-    height: 100vh;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; /* To evenly space the items */
-    z-index: 999;
-  }
-  
-  /* Styling for each navbar item */
-  .links-nav-item {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 80%; /* This is width of navbar */
-    height: 15vh; /* Adjust the height as needed */
-    cursor:pointer;
-    transition: background-color 0.5s;
-    border-radius: 20px; /* Add rounded corners to the navbar items */
-    overflow: hidden; /* Ensure the rounded corners are applied */
-    margin: 5px;
-  }
-  
-  /* To Size & Color the icons */
-  .links-nav-item i{
-    color: #481C5C;
-    font-size: 35px;
-  }
-  
-  /* Styling for the item's text */
-  .links-nav-text {
-    display: none;
-    color:antiquewhite; /* Text color */
-    margin-top: 5px;
-    font-family: 'Raleway', sans-serif, bold;
-  }
-  
-  /* Hover effect for navbar items */
-  .links-nav-item:hover {
-    background-color:#481C5C; /* Change this to your preferred hover color */
-  }
-  
-  /* Show the text when hovering over the item */
-  .links-nav-item:hover .nav-text {
-    display:block;
-    font-size: 1rem;
-  }
-  
-  .links-nav-item:hover i{
-    color:#FC7F61; /* Change this to your preferred hover color of the icon */
-  }
-
-
-}
-
-/* END LINKS NAV */
+/* END NAV */
 
 #bg-container {
   background: url(assets/Homepage_BG.png) center center / cover no-repeat;
@@ -368,76 +241,6 @@ a {
 
 }
 
-
-@media (max-width: 768px) {
-  .about {
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .about-heading {
-    display: flex;
-    height: 10vh;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .about-heading-text {
-    font-family: 'Oleo Script', cursive;
-    font-size: 3vw;
-    color: antiquewhite;
-    background-color:#FC7F61;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    border-radius: 80px;
-  }
-  
-  
-  .about-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .about-img {
-    height: 25vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .about-img  img{
-    background-color: #FC7F61;
-    height: 30vw;
-    width: 30vw;
-    border-radius: 100%;
-    margin-left: 0;
-    margin-top: 0;
-  }
-  
-  .about-text {
-    height: 60vh;
-    width: 100vw;
-    text-align: left;
-  }
-  
-  .about-text-text {
-    background-color: #FC7F61;
-    font-family: 'Raleway', sans-serif;
-    color:antiquewhite;
-    font-size:1rem;
-    margin: 2vw;
-    border-radius: 35px;
-    padding: 45px;
-  
-  }
-}
-
 /* Projects */
 .projects {
   height: 100vh;
@@ -531,26 +334,6 @@ a {
   height: 10vh;
   margin-bottom: 15vh;
 }
-
-
-@media (max-width: 768px) {
-  .projects-row-1 {
-    margin-left: 0;
-    padding: 0;
-  }
-
-  .projects-row-2 {
-    margin: 0;
-    padding: 0;
-  }
-
-  .projects {
-    font-size: 1rem;
-  }
-
-  .projects-heading {
-    margin-top: 50px;
-  }
 
 /* Contact me section */
 
@@ -661,7 +444,6 @@ footer {
 }
 
 
-
 .footer-sns-links i{
   color: #FC7F61;
   font-size: 2rem;
@@ -672,18 +454,183 @@ footer {
   color:antiquewhite ;
 }
 
+/* Styling when user is in mobile mode */
+
 @media (max-width: 768px) {
-  .footer-divider{
-    margin: 2vh;
+
+  .navbar-container {
+    width: 100vw;
+    height: 10vh;
+    flex-direction: row;
+    font-size: .8rem;
+  }
+  
+  .nav-item {
+    flex-direction: column;
   }
 
-  .footer-content{
+  .links-navbar-container {
+    top: 85vh;
+    width: 100vw;
+    height: 10vh;
+    flex-direction: row;
+  }
+  
+
+  .about-heading{
+    height: 10vh;
+  }
+
+  .about-heading-text {
+    font-size: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  
+  .about-content {
+    display: flex;
     flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-img {
+    height: 15vh;
+    width: 100vw;
+    justify-content:center ;
+  }
+  
+  .about-img  img{
+    background-color: #FC7F61;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  
+  .about-text {
+    height: 75vh;
+    width: 90vw;
+    text-align: center;
+  }
+  
+  .about-text-text {
+    font-size:.9rem;
+    margin: 2vw;
+    border-radius: 35px;
+    padding: 40px;
+  }
+
+  .projects{
+    height: 190vh;
+  }
+
+  .projects-heading {
+    height: 10vh;
     margin-top: 50px;
   }
 
-  .contact  {
+  .projects-heading-text {
+    font-size: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .projects-heading-desc {
+    height: 5vh;
+    font-size: 5vw;
+    font-family: 'Oleo Script', cursive;
+  }
+
+  .projects-row-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0;
+    justify-content: center;
+    height: 85vh;
+  }
+
+  .projects-row-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 85vh;
+  }
+
+  .projects img {
+    width: 70vw;
+    border-radius: 25px;
+  }
+
+  .projects-app {
+    width: 70vw;
+  }
+
+  .projects-br{
+    height: 5vh;
+  }
+
+  .project-contact-br {
+    display: none;
+  }
+
+  .contact {
+    margin-top: 5vh;
+    height: 60vh;
     font-size: 1rem;
   }
+
+  .contact-heading {
+    height: 10vh;
+  }
+
+  .contact-heading-text {
+    font-size: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .contact-heading-desc {
+    height: 10vh;
+    font-size: 5vw;
+    font-family: 'Oleo Script', cursive;
+    margin: 0;}
+
+  .contact-card {
+    height: 90vh;
+  }  
+
+  .contact-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
+
+  .contact-form {
+    margin: 0;
+    border-radius: 25px;
+    height: 40vh;
+    width: 80vw;
+    padding: 3vw;
+  }
+
+  .footer {
+    font-size: .9rem;
+    height: 55vh;
+  }
+
+  .footer-divider{
+    display: none;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    height: 35vh;
+  }
 }
+  
