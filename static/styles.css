@@ -326,8 +326,15 @@ a {
   border-radius: 25px;
 }
 
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .modal-body img{
-  width: 465px;
+  width: 30vw;
 }
 
 .project-contact-br{
@@ -574,6 +581,17 @@ footer {
 
   .projects-br{
     height: 5vh;
+  }
+
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .modal-body img {
+    width:80vw;
   }
 
   .project-contact-br {
